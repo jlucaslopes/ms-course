@@ -23,7 +23,7 @@ public class WorkerResources {
         List<Worker> workers = repository.findAll();
         return ResponseEntity.ok(workers);
     }
-    
+
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
         Worker worker = repository.findById(id).get();
