@@ -1,18 +1,10 @@
-package com.example.jlopes.entities;
+package com.jlopes.hruser.entities;
 
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_user")
@@ -60,6 +52,7 @@ public class User implements Serializable {
         this.name = name;
     }
 
+    @Column(unique = true)
     public String getEmail() {
         return email;
     }

@@ -1,4 +1,4 @@
-package com.example.jlopes;
+package com.jlopes.hruser;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

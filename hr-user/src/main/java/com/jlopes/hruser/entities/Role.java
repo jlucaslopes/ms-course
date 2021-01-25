@@ -1,4 +1,4 @@
-package com.example.jlopes.entities;
+package com.jlopes.hruser.entities;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
